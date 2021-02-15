@@ -1,6 +1,7 @@
 ﻿# Automatic RVP (Resonances Via Padé)
 
-![] (https://github.com/haritan/Automatic-RVP/blob/master/logo.png)
+![](https://github.com/haritan/Automatic-RVP/blob/master/logo.png)
+
 **Automatic RVP is a python based code designed to automatically calculate resonances energy and width using a single energy level stabilization graph as input.**
 
 The code identifies the flat region of the stabilization graph, calculates Padé approximant for different sections in that region, and then estimates the corresponding resonance energy and width from each Padé approximant. Later, the code uses a data clustering algorithm to evaluate the mean value of the resonance energy and width based on the results collected. 

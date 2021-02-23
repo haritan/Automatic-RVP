@@ -14,7 +14,7 @@ Yet, the code also provides the following data:
 3. The input data for the clustering algorithm.
 
 Therefore, the code is also modular, and can be broken into 3 different segments, that may run individually, as follows:
-1. Stabilization -  Identifies a stable region in a stabilization graph.
+1. Stabilization -  Identifies a flat region in a stabilization graph.
 2. Pade - Calculates Padé approximant for different sections in an input and estimates the corresponding resonance energy and width from each Padé approximant.
 3. Clustering - Finds a cluster of resonance energy and width based on an input data.
 

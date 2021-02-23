@@ -42,48 +42,48 @@ More detailed examples with inputs and outputs can be found in the example folde
 
 #### Automatic resonance position and width
 
-Save a single energy level stabilization data in a zzz file called *'file_name'*. In this zzz file, create two columns separated by xxx. Save the alpha values in the first column, and the corresponding energy values in the second column.
+Save a single energy level stabilization data in a txt file (*'file_name.txt'*). In this file, create two columns separated by tab or space. Save the alpha values in the first column, and the corresponding energy values in the second column (see example input file in the example folder).
 
 Calculate resonance energy and width using :
 ```sh
 from rvp import auto_rvp
 	
-auto_rvp(input_file= 'file_name')
+auto_rvp(input_file= 'file_name.txt')
 ```
 
 #### Stable region identification
 
-Save a single energy level stabilization data in a zzz file called *'file_name'*. In this zzz file, create two columns separated by xxx. Save the alpha values in the first column, and the corresponding energy values in the second column.
+Save a single energy level stabilization data in a txt file (*'file_name.txt'*). In this file, create two columns separated by tab or space. Save the alpha values in the first column, and the corresponding energy values in the second column (see example input file in the example folder).
 
 Identify the stable region using:
 
 ```sh
 from stabilization import run_stabilization
 	
-run_stabilization(input_file= 'file_name')
+run_stabilization(input_file= 'file_name.txt')
 ```
 
 #### Padé approximant for different sections in an input
 
-Save a selected data in a zzz file called *'file_name'*. In this zzz file, create two columns separated by xxx. Save the alpha values in the first column, and the corresponding energy values in the second column.
+Save selected data in a txt file (*'file_name.txt'*). In this file, create two columns separated by tab or space. Save the alpha values in the first column, and the corresponding energy values in the second column (see example input file in the example folder).
 
-Calculate Padé approximant for different sections in the input and estimate the corresponding resonance energy and width from each Padé approximant using:
+Calculate Padé approximant for different sections in the input file and estimate the corresponding resonance energy and width from each Padé approximant using:
 
 ```sh
-from pade
+from pade import run_pade (#Yochai)
 	
-run_pade(input_file= 'file_name')
+run_pade(input_file= 'file_name.txt')
 ```
 
 #### Resonance energy and width clusterization
 
-Save a selected data in a csv file called *'file_name'*. In this file, create five columns separated by xxx. Save the real energy values  of the resonance in the first column, the imaginary energy values  in the second column, the corresponding alpha values in the third column, the corresponding theta values in the fourth column and the corresponding error values in the fifth column .
+Save a selected data in a csv file (*'file_name.csv'*). In this file, create five columns separated by commas. Save the real energy values  of the resonance in the first column, the imaginary energy values in the second column, the corresponding alpha values in the third column, the corresponding theta values in the fourth column and the corresponding error values in the fifth column (see example input file in the example folder).
 
 Find a cluster of resonance energy and width using:
 
 
 ```sh
-from clustering
+from clustering import run_clustering (#Yochai)
 	
 run_clustering(input_file= 'file_name')
 ```

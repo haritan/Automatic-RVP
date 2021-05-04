@@ -55,8 +55,8 @@ def expand_by_curve(data, i, der, threshold):
 	right = i + 1
 	left = i
 	if abs(der) < 3 * 1e-3:
-		max_curve = 3 * 1e-3
-		min_curve = -3 * 1e-3
+		max_curve = 3 * 1e-3 * threshold
+		min_curve = -3 * 1e-3 * threshold
 	elif der < 0:
 		max_curve = der * (2 - threshold)
 		min_curve = der * threshold

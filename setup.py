@@ -8,6 +8,7 @@ setup(
 	version='1.0.0',
 	description='RVP Program',
 	long_description=long_description,
+	long_description_description_type='test/markdown',
 	packages=find_packages(),
 	url='https://github.com/haritan/RVP',
 	author='Yochai Safrai',

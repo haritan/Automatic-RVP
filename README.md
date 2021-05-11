@@ -19,22 +19,15 @@ Therefore, the code is also modular, and can be broken into 3 different segments
 3. Clustering - Finds a cluster of resonance energy and width based on an input data.
 
 ## Installation
-#Yochai
 
-[![PyPI version](https://badge.fury.io/py/hexalattice.svg)](https://badge.fury.io/py/hexalattice)
+[![PyPI version](https://badge.fury.io/py/automatic-rvp.svg)](https://badge.fury.io/py/automatic-rvp)
 ![python version](https://upload.wikimedia.org/wikipedia/commons/f/fc/Blue_Python_3.7_Shield_Badge.svg)
-![conda](https://anaconda.org/conda-forge/hexalattice/badges/installer/conda.svg)
-![downloads_anaconda](https://anaconda.org/conda-forge/hexalattice/badges/downloads.svg)
-![license](https://anaconda.org/conda-forge/hexalattice/badges/license.svg)
 
 ```sh
 # Using pip
-pip install hexalattice
+pip install automatic-rvp
 ```
-```sh
-# Using conda
-conda install -c conda-forge hexalattice
-```
+
 ## Usage example
 
 *The examples below are short usage examples with  default parameters. 
@@ -99,9 +92,7 @@ Idan Haritan – idan.haritan@gmail.com
 
 Yochai Safrai - yochai.safrai@gmail.com
 
-Distributed under the MIT license. See ``LICENSE`` for more information. #Yochai
-
-[https://github.com/alexkaz2/hexalattice](https://github.com/alexkaz2/)
+[https://github.com/haritan/Automatic-RVP](https://github.com/haritan/)
 
 ## Citing us
 The final version of the paper is available at:  

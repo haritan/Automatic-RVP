@@ -15,7 +15,7 @@ Yet, the code also provides the following data:
 
 Therefore, the code is also modular, and can be broken into 3 different segments, that may run individually, as follows:
 1. Stabilization -  Identifies a flat region in a stabilization graph.
-2. Pade - Calculates Padé approximant for different sections in an input and estimates the corresponding resonance energy and width from each Padé approximant.
+2. Padé - Calculates Padé approximant for different sections in an input and estimates the corresponding resonance energy and width from each Padé approximant.
 3. Clustering - Finds a cluster of resonance energy and width based on an input data.
 
 ## Installation
@@ -41,7 +41,7 @@ Calculate resonance energy and width using :
 ```sh
 from rvp import auto_rvp
 	
-auto_rvp(input_file= 'file_name.txt')
+auto_rvp(input_file='file_name.txt')
 ```
 
 #### Stable region identification
@@ -53,7 +53,7 @@ Identify the stable region using:
 ```sh
 from stabilization import run_stabilization
 	
-run_stabilization(input_file= 'file_name.txt')
+run_stabilization(input_file='file_name.txt')
 ```
 
 #### Padé approximant for different sections in an input
@@ -63,9 +63,9 @@ Save selected data in a txt file (*'file_name.txt'*). In this file, create two c
 Calculate Padé approximant for different sections in the input file and estimate the corresponding resonance energy and width from each Padé approximant using:
 
 ```sh
-from pade import run_pade (#Yochai)
+from pade import run_pade
 	
-run_pade(input_file= 'file_name.txt')
+run_pade(input_file='file_name.txt')
 ```
 
 #### Resonance energy and width clusterization
@@ -76,9 +76,9 @@ Find a cluster of resonance energy and width using:
 
 
 ```sh
-from clustering import run_clustering (#Yochai)
+from clustering import run_clustering
 	
-run_clustering(input_file= 'file_name')
+run_clustering(input_file='file_name')
 ```
 
 ## Release History
@@ -94,15 +94,3 @@ Yochai Safrai - yochai.safrai@gmail.com
 
 [https://github.com/haritan/Automatic-RVP](https://github.com/haritan/)
 
-## Citing us
-The final version of the paper is available at:  
-```
-@inproceedings{eriksson2019scalable,
-  title = {Scalable Global Optimization via Local {Bayesian} Optimization},
-  author = {Eriksson, David and Pearce, Michael and Gardner, Jacob and Turner, Ryan D and Poloczek, Matthias},
-  booktitle = {Advances in Neural Information Processing Systems},
-  pages = {5496--5507},
-  year = {2019},
-  url = {http://papers.nips.cc/paper/8788-scalable-global-optimization-via-local-bayesian-optimization.pdf},
-}
-```

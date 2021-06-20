@@ -1,21 +1,21 @@
 ![](https://github.com/haritan/Automatic-RVP/blob/master/logo.png)
 
 
-# Automatic RVP (Resonances Via Padé)
+# Automatic RVP (Resonances Via Pade)
 
 **Automatic RVP is a python based code designed to automatically calculate resonances energy and width using a single energy level stabilization graph as input.**
 
-The code identifies the flat region of the stabilization graph, calculates the Padé approximant for different sections in that region, and then estimates the corresponding resonance energy and width from each Padé approximant. Later, the code uses a data clustering algorithm to evaluate the mean value of the resonance energy and width based on the results collected. 
+The code identifies the flat region of the stabilization graph, calculates the Pade approximant for different sections in that region, and then estimates the corresponding resonance energy and width from each Pade approximant. Later, the code uses a data clustering algorithm to evaluate the mean value of the resonance energy and width based on the results collected. 
 
 The final output of the code is the mean resonance energy and width alongside information on the clustering result, and statistical data such as standard deviations.
 Yet, the code also provides the following data:
 1.  The stable region found.
-2. The resonance energy and width from each Padé approximant.
+2. The resonance energy and width from each Pade approximant.
 3. The input data for the clustering algorithm.
 
 Therefore, the code is also modular, and can be broken into 3 different segments, that may run individually, as follows:
 1. Stabilization -  Identifies a flat region in a stabilization graph.
-2. Padé - Calculates Padé approximant for different sections in an input and estimates the corresponding resonance energy and width from each Padé approximant.
+2. Pade - Calculates Pade approximant for different sections in an input and estimates the corresponding resonance energy and width from each Pade approximant.
 3. Clustering - Finds a cluster of resonance energy and width based on an input data.
 
 ## Installation
@@ -56,11 +56,11 @@ from stabilization import run_stabilization
 run_stabilization(input_file='file_name.txt')
 ```
 
-#### Padé approximant for different sections in an input
+#### Pade approximant for different sections in an input
 
 Save selected data in a txt file (*'file_name.txt'*). In this file, create two columns separated by tab or space. Save the alpha values in the first column, and the corresponding energy values in the second column (see example input file in the example folder).
 
-Calculate Padé approximant for different sections in the input file and estimate the corresponding resonance energy and width from each Padé approximant using:
+Calculate Pade approximant for different sections in the input file and estimate the corresponding resonance energy and width from each Pade approximant using:
 
 ```sh
 from pade import run_pade

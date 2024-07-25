@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setup(
 	name='automatic-rvp',
-	version='1.0.0',
+	version='1.0.3',
 	description='RVP Program',
 	long_description=long_description,
 	long_description_content_type='text/markdown',

@@ -83,8 +83,17 @@ run_clustering(input_file='file_name')
 
 ## Release History
 
+* 1.0.3
 * 1.0.0
     * First version
+
+## References
+
+This project is based on Non-Hermitian quantum mechanics theory described in:
+*Moiseyev, N. Non-Hermitian Quantum Mechanics; Cambridge University Press: Cambridge, U.K., 2011*.
+
+The RVP method itself is explained in details in:
+*Landau, A., Haritan, I., Kapralova-Zdanska, P. R., & Moiseyev, N. (2016). Atomic and molecular complex resonances from real eigenvalues using standard (hermitian) electronic structure calculations. The Journal of Physical Chemistry A, 120(19), 3098-3108.*
 
 ## About & License
 
